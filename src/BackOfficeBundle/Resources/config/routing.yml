@@ -1,3 +1,37 @@
+back_office_BalnkPage:
+    path:     /BlankPage/
+    defaults: { _controller: BackOfficeBundle:BlankPage:index }
+
+back_office_BootstrapElements:
+    path:     /BootstrapElements/
+    defaults: { _controller: BackOfficeBundle:Bootstrapelements:index }
+
+back_office_BootstrapGrid:
+    path:     /BootstrapGrid/
+    defaults: { _controller: BackOfficeBundle:Bootstrapgrid:index }
+
+back_office_charts:
+    path:     /Charts/
+    defaults: { _controller: BackOfficeBundle:Charts:index }
+
 back_office_homepage:
     path:     /
+    defaults: { _controller: BackOfficeBundle:Dashboard:index }
+
+back_office_Default:
+    path:     /
     defaults: { _controller: BackOfficeBundle:Default:index }
+
+back_office_Forms:
+    path:     /Forms/
+    defaults: { _controller: BackOfficeBundle:Forms:index }
+
+back_office_homepage_RTL:
+    path:     /RtlIndex/
+    defaults: { _controller: BackOfficeBundle:RTLDashboard:index }
+
+back_office_Tables:
+    path:     /Tables/
+    defaults: { _controller: BackOfficeBundle:Tables:index }
+
+
