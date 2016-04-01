@@ -1,0 +1,7 @@
+cms_homepage:
+    path:     /
+    defaults: { _controller: CmsBundle:DashBoard:index }
+
+cms_configuration:
+    path:     /configuration
+    defaults: { _controller: CmsBundle:Configuration:index }
