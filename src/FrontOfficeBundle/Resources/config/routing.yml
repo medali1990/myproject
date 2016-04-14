@@ -1,3 +1,11 @@
 front_office_homepage:
     path:     /
     defaults: { _controller: FrontOfficeBundle:Default:index }
+
+contacter:
+    path:     /contact
+    defaults: { _controller: FrontOfficeBundle:Default:addMessage }
+view:
+    path:     /view
+    defaults: { _controller: FrontOfficeBundle:Default:viewMessage }
+

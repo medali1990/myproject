@@ -3,6 +3,7 @@
 namespace FrontOfficeBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\QueryBuilder;
 
 /**
  * MessageRepository
@@ -12,4 +13,17 @@ use Doctrine\ORM\EntityRepository;
  */
 class MessageRepository extends EntityRepository
 {
+    
+    public function myFindAll(){
+        return $this
+                ->createQueryBuilder('a')
+                ->getQuery()
+                ->getResult()
+                ;
+    }
+    
+    public function myfindone($id){
+        
+        
+    }
 }

@@ -5,3 +5,7 @@ cms_homepage:
 cms_configuration:
     path:     /configuration
     defaults: { _controller: CmsBundle:Configuration:index }
+ 
+affichemessage:
+    path:     /view/{id}
+    defaults: { _controller: FrontOfficeBundle:Default:viewMessage }

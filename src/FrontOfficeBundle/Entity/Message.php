@@ -49,6 +49,16 @@ class Message
      */
     private $message;
 
+    /**
+     *@var date
+     *@ORM\Column(name="date", type="date")
+     */
+    private $date;
+
+    public function __construct(){
+        //definir une date du jour par defaut 
+        $this->date= new \Datetime();
+    }
 
     /**
      * Get id
@@ -150,5 +160,24 @@ class Message
     public function getMessage()
     {
         return $this->message;
+    }
+
+    /**
+     *Get date 
+     *@return date
+     */
+    public function getdate(){
+        return $this->date;
+    }
+
+    /**
+     * Set date
+     *
+     * @param date $date
+     * @return date
+     */
+    public function setdate($date){
+        $this->date=$date;
+        return $this;
     }
 }
